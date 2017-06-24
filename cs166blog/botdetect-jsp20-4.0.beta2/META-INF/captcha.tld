@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+    
+    <description>BotDetect Captcha tag library</description>
+    <tlib-version>1.0</tlib-version>
+    <short-name>BotDetectCaptcha</short-name>
+    <uri>https://captcha.com/java/jsp</uri>
+    
+    <tag>
+        <name>captcha</name>
+        <tag-class>com.captcha.botdetect.web.jsp.CaptchaTag</tag-class>
+        <body-content>tagdependent</body-content>
+        
+        <attribute>
+            <name>id</name>
+            <required>true</required>
+        </attribute>
+        
+        <attribute>
+            <name>userInputID</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>codeLength</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>codeStyle</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>disallowedCodeSubstrings</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>codeTimeout</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>imageStyle</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>imageWidth</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>imageHeight</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>imageFormat</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>customDarkColor</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>customLightColor</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>soundEnabled</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>soundStyle</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>soundFormat</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>soundFormat</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>soundRegenerationMode</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>locale</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>imageTooltip</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>soundTooltip</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>reloadTooltip</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>helpLinkText</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>helpLinkUrl</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>reloadEnabled</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>useSmallIcons</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>useHorizontalIcons</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>soundIconUrl</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>reloadIconUrl</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>iconsDivWidth</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>helpLinkEnabled</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>helpLinkMode</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>tabIndex</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>additionalCssClasses</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>additionalInlineCss</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>addCssInclude</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>addScriptInclude</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>addInitScriptInclude</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>autoUppercaseInput</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>autoFocusInput</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>autoClearInput</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>autoReloadExpiredCaptchas</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>autoReloadTimeout</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>soundStartDelay</name>
+            <required>false</required>
+        </attribute>
+        
+        <attribute>
+            <name>remoteScriptEnabled</name>
+            <required>false</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>stylesheet</name>
+        <tag-class>com.captcha.botdetect.web.jsp.StyleUrl</tag-class>
+        <body-content>tagdependent</body-content>
+    </tag>
+
+    <tag>
+        <name>clientScript</name>
+        <tag-class>com.captcha.botdetect.web.jsp.ClientScriptUrl</tag-class>
+        <body-content>tagdependent</body-content>
+    </tag>
+</taglib>
